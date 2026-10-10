@@ -142,7 +142,10 @@ public class Security {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration cors = new CorsConfiguration();
 
-        cors.setAllowedOrigins(List.of("http://localhost:5173"));
+        cors.setAllowedOrigins(List.of(
+    "http://localhost:5173",
+    "https://employeehub-frontend-xt0h.onrender.com"
+));
         cors.setAllowedMethods(List.of(
             "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"
         ));
